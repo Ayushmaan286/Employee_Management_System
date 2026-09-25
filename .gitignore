@@ -1,5 +1,5 @@
 *.class
 .env
 .vscode/
-.VSCodeCounter/
+VSCodeCounter/
 
