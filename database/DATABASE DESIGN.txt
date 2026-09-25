@@ -1,0 +1,49 @@
+DATABASE DESIGN FOR EMPLOYEE MANAGEMENT SYSTEM (DATABASE NAME IS employee_management_system)
+
+TABLE EMPLOYEE 
+
+COLUMN:employee_id
+DATAYPE:int
+CONSTRAINT: primary key 
+ATTRIBUTES: AUTO_INCREMENT
+
+COLUMN: employee_name
+DATAYPE: varchar(100)
+CONSTRAINT: not null
+
+COLUMN:employee_salary
+DATAYPE: decimal(10,2)
+CONSTRAINT: 
+
+COLUMN:employee_department_id
+DATAYPE:int
+CONSTRAINT: foreign key reference department(department_id)
+
+COLUMN: employee_date_of_joining(ddmmyyyy)
+DATAYPE:date
+CONSTRAINT:
+
+COLUMN: employee_email
+DATAYPE: varchar(100)
+CONSTRAINT: unique not null
+
+COLUMN: employee_phone_number
+DATAYPE: varchar(15)
+CONSTRAINT:
+
+COLUMN: employee_designation
+DATAYPE: varchar(100)
+CONSTRAINT:
+
+
+TABLE DEPARTMENT 
+
+COLUMN: department_id
+DATAYPE: int 
+CONSTRAINT: primary key
+
+COLUMN: department_name
+DATAYPE: varchar(50)
+CONSTRAINT: unique not null
+
+

@@ -1,0 +1,35 @@
+Date : 2026-09-25 18:04:08
+Directory : e:\Projects\Employee Management System
+Total : 8 files,  286 codes, 9 comments, 47 blanks, all 342 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Java     |          7 |        246 |          9 |         44 |        299 |
+| MS SQL   |          1 |         40 |          0 |          3 |         43 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                           | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                              |          8 |        286 |          9 |         47 |        342 |
+| . (Files)                                                      |          1 |         40 |          0 |          3 |         43 |
+| src                                                            |          7 |        246 |          9 |         44 |        299 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                       | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\Projects\Employee Management System\database_query.sql      | MS SQL   |         40 |          0 |          3 |         43 |
+| e:\Projects\Employee Management System\src\Department.java     | Java     |         25 |          0 |          6 |         31 |
+| e:\Projects\Employee Management System\src\Employee.java       | Java     |         86 |          2 |          9 |         97 |
+| e:\Projects\Employee Management System\src\EmployeeDAO.java    | Java     |         33 |          3 |          8 |         44 |
+| e:\Projects\Employee Management System\src\MAIN.java           | Java     |         26 |          3 |          7 |         36 |
+| e:\Projects\Employee Management System\src\jdbc_utility.java   | Java     |         40 |          0 |          5 |         45 |
+| e:\Projects\Employee Management System\src\testconnection.java | Java     |         14 |          1 |          3 |         18 |
+| e:\Projects\Employee Management System\src\testmain.java       | Java     |         22 |          0 |          6 |         28 |
+| Total                                                          |          |        286 |          9 |         47 |        342 |
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
