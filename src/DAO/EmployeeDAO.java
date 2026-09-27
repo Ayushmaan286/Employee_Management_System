@@ -42,7 +42,50 @@ public class EmployeeDAO {
             e.printStackTrace();
         }
         jdbc_utility.close_connection(connect, statement);
+    }
+    public Employee getEmployeeById(int id)
+    {
+        // return employee information corresponding to the id 
+        Connection connect = null;
+        PreparedStatement statement = null;
+        ResultSet rs=null;
 
+        connect=jdbc_utility.get_connection();
+        String sql="SELECT * FROM employee WHERE employee_id=?";
+        try
+        {
+            statement=connect.prepareStatement(sql);
+            statement.setInt(1,id);
+            rs=statement.executeQuery();
+            if(rs.next())
+            {
+                String name =rs.getString(2);
+                BigDecimal salary=rs.getBigDecimal(3); 
+                int department = rs.getInt(4);
+                LocalDate dateOfJoining=rs.getDate(5).toLocalDate();
+                String email=rs.getString(6);
+                String phoneNumber=rs.getString(7);
+                String designation=rs.getString(8);
+
+                Employee employee=new Employee(id, name, salary, department, dateOfJoining, email, phoneNumber, designation); 
+                
+                return employee;
+            }
+            else 
+            {
+                return null;
+            }
+
+        }
+        catch(SQLException es)
+        {
+            es.printStackTrace();
+            return null;
+        }
+        finally
+        {
+            jdbc_utility.close_connection(connect, statement, rs);
+        }
     }
 
 

@@ -1,5 +1,7 @@
 package util;
 import java.sql.*;
+
+import javax.naming.spi.DirStateFactory.Result;
 public class jdbc_utility {
 
     static 
@@ -32,6 +34,19 @@ public class jdbc_utility {
     {
         try
         {
+            statement.close();
+            conect.close();
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    public static void close_connection(Connection conect,PreparedStatement statement,ResultSet rs)
+    {
+        try
+        {
+            rs.close();
             statement.close();
             conect.close();
         }
